@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Electronic Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Electronic Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="sales.html">Today's Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="prev-btn" onclick="scrollLeft('most-likely-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('most-likely-products')">&gt;</button>
+
+    <main>
+        <section class="products-section">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/414KKTxHxSL._AC_UF1000,1000_QL80_.jpg" alt="Laptop">
+                    <h3>High-Performance Laptop</h3>
+                    <p>$799</p>
+                    <button onclick="addToCart('Laptop', 799)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images-cdn.ubuy.co.in/633a87dfd6b53a07f76e043c-ip12-pro-max-unlocked-smartphone-for.jpg" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>$499</p>
+                    <button onclick="addToCart('Smartphone', 499)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://www.lg.com/content/dam/channel/wcms/in/images/tvs/43uq7500psf_atr_eail_in_c/gallery/43UQ7500PSF-DZ-001.jpg" alt="4K Smart TV">
+                    <h3>4K ultra HD <br> Smart TV</h3>
+                    <p>$999</p>
+                    <button onclick="addToCart('4K TV', 999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61ZjlBOp+rL._AC_UF1000,1000_QL80_.jpg" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>$199</p>
+                    <button onclick="addToCart('Smartwatch', 199)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61jPn6wyKhL.jpg" alt="Tablet">
+                    <h3>Android Tablet</h3>
+                    <p>$299</p>
+                    <button onclick="addToCart('Tablet', 299)">Add to Cart</button>
+                </div>
+                <div class="product" onclick="showProductDetails('mostlikely8')">
+                    <img src="https://th.bing.com/th/id/OIP.pDsagE5jE1jYOCAnzYOwpQAAAA?rs=1&pid=ImgDetMain" alt="Smart Thermostat">
+                    <h3>Smart Thermostat</h3>
+                    <p>Price: ₹8,000</p>
+                    <button onclick="addToCart('Smart Thermostat', 8000)">Add to Cart</button>
+                </div>
+                <div class="product" onclick="showProductDetails('mostlikely10')">
+                    <img src="https://th.bing.com/th/id/OIP.Ypc7LxfvGwTwPgooJWl6lwHaHa?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bluetooth Speaker">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>Price: ₹7,000</p>
+                    <button onclick="addToCart('Bluetooth speaker', 7000)">Add to Cart</button>
+                </div>
+            </div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@electronichub.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

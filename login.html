@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Electronic Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Electronic Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="sales.html">Today's Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="login-main" style="background-image: url('images/login-bg.jpg');">
+        <section class="login-section">
+            <div class="login-container">
+              
+                <form action="login-action" method="POST">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="login-btn">Login</button>
+                    </div>
+                    <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@electronichub.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

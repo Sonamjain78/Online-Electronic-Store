@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Hub - Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Electronic Hub</h1>
+        </div>
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="sales.html">Today's Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="marquee-container">
+            <marquee behavior="scroll" direction="left" class="marquee-text">
+                Exclusive deals on electronics! Don't miss out on our special offers and discounts!
+            </marquee>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products..." />
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="cart">
+            <a href="#cart">🛒 Cart</a>
+        </div>
+    </header>
+    
+    
+
+    <main>
+        <section id="hero" style="background-image: url('images/electronics-bg.jpg');">
+            <h2>Latest Electronic Gadgets</h2>
+            <p>Discover a wide range of the latest and greatest in tech!</p>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </section>
+
+       
+        <section id="most-likely-items" class="products-section">
+            <marquee behavior="scroll" direction="right" class="section-title">Most Likely Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="most-likely-products">
+                    <div class="product" onclick="showProductDetails('mostlikely1')">
+                        <img src="https://th.bing.com/th/id/OIP.NiLYvmNpm23KbG6kDbbWTAHaFj?w=206&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Smartphone">
+                        <h3>Smartphone</h3>
+                        <p>Price: ₹41,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely2')">
+                        <img src="https://th.bing.com/th/id/OIP.p4MYgPSOwNuht36nnOhC5AHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="4K Smart TV">
+                        <h3>4K Smart TV</h3>
+                        <p>Price: ₹82,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely3')">
+                        <img src="https://th.bing.com/th/id/OIP.3jOBtBw9Q9iB8CU2YCFjxQHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Smartwatch">
+                        <h3>Smartwatch</h3>
+                        <p>Price: ₹16,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely4')">
+                        <img src="https://th.bing.com/th/id/OIP.f4oPI9Wp2uHwlkOHDeJengHaHa?w=203&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Laptop">
+                        <h3>Laptop</h3>
+                        <p>Price: ₹91,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely5')">
+                        <img src="https://th.bing.com/th/id/OIP.9ElZWhFvAsqZesiuEuQemgHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Tablet">
+                        <h3>Tablet</h3>
+                        <p>Price: ₹33,000</p>
+                    </div>
+                    <!-- 5 additional products -->
+                    <div class="product" onclick="showProductDetails('mostlikely6')">
+                        <img src="https://www.bhphotovideo.com/images/images2500x2500/sony_mdrxb650bt_l_mdr_xb650bt_extrabass_bluetooth_headphones_1220509.jpg" alt="Bluetooth Headphones">
+                        <h3>Bluetooth Headphones</h3>
+                        <p>Price: ₹10,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely7')">
+                        <img src="https://th.bing.com/th/id/OIP.IRF2FE6NPmj4zRlR4_hz3wAAAA?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="VR Headset">
+                        <h3>VR Headset</h3>
+                        <p>Price: ₹25,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely8')">
+                        <img src="https://th.bing.com/th/id/OIP.pDsagE5jE1jYOCAnzYOwpQAAAA?rs=1&pid=ImgDetMain" alt="Smart Thermostat">
+                        <h3>Smart Thermostat</h3>
+                        <p>Price: ₹8,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely9')">
+                        <img src="https://i5.walmartimages.com/asr/839d02af-d2ba-445b-8807-88eb3f23a384_1.6c096004927aa53220fe27d76664edfb.jpeg" alt="Smart Doorbell">
+                        <h3>Smart Doorbell</h3>
+                        <p>Price: ₹6,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('mostlikely10')">
+                        <img src="https://th.bing.com/th/id/OIP.Ypc7LxfvGwTwPgooJWl6lwHaHa?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bluetooth Speaker">
+                        <h3>Bluetooth Speaker</h3>
+                        <p>Price: ₹7,000</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('most-likely-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('most-likely-products')">&gt;</button>
+            </div>
+        </section>
+
+        <!-- Least Cost Items Section -->
+        <section id="least-cost-items" class="products-section">
+            <marquee behavior="scroll" direction="left" class="section-title">Least Cost Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="least-cost-products">
+                    <div class="product" onclick="showProductDetails('leastcost1')">
+                        <img src="https://th.bing.com/th/id/OIP.OwtqRz4yuwuw2XwBx_N3DQHaE8?w=304&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Smart Light">
+                        <h3>Smart Light</h3>
+                        <p>Price: ₹5,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost2')">
+                        <img src="https://th.bing.com/th/id/OIP.rXr347cVVTLlMz-s6HuVEwAAAA?w=197&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Wireless Charger">
+                        <h3>Wireless Charger</h3>
+                        <p>Price: ₹3,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost3')">
+                        <img src="https://th.bing.com/th/id/OIP.cicA5KiX2o3-FPs28HRFyAHaHa?rs=1&pid=ImgDetMain" alt="USB Hub">
+                        <h3>USB Hub</h3>
+                        <p>Price: ₹1,500</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost4')">
+                        <img src="https://th.bing.com/th/id/OIP.AJb4DKk5YoO-RN6M82ftxQHaGk?w=217&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Power Bank">
+                        <h3>Power Bank</h3>
+                        <p>Price: ₹4,500</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost5')">
+                        <img src="https://th.bing.com/th/id/OIP.MMD7EuGkjnRpDo1sQxE34gHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bluetooth Earbuds">
+                        <h3>Bluetooth Earbuds</h3>
+                        <p>Price: ₹6,500</p>
+                    </div>
+                    <!-- 5 additional products -->
+                    <div class="product" onclick="showProductDetails('leastcost6')">
+                        <img src="https://th.bing.com/th/id/OIP.Za5iRtfdhhxMxvRrynof4gHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="USB Flash Drive">
+                        <h3>USB Flash Drive</h3>
+                        <p>Price: ₹2,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost7')">
+                        <img src="https://th.bing.com/th/id/OIP.qWfdESB9Ox3MkID7gvYEnAHaGV?w=235&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Memory Card">
+                        <h3>Memory Card</h3>
+                        <p>Price: ₹1,200</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost8')">
+                        <img src="https://th.bing.com/th/id/OIP.fLJqlRALLF34bffvfDStuQHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Car Charger">
+                        <h3>Car Charger</h3>
+                        <p>Price: ₹3,200</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost9')">
+                        <img src="https://th.bing.com/th/id/OIP.ueJ5t5HraRQKfMlMJO42gQHaHa?w=187&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Portable Fan">
+                        <h3>Portable Fan</h3>
+                        <p>Price: ₹1,800</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('leastcost10')">
+                        <img src="data:image/jpeg;base64,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" alt="Phone Stand">
+                        <h3>Phone Stand</h3>
+                        <p>Price: ₹750</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('least-cost-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('least-cost-products')">&gt;</button>
+            </div>
+        </section>
+
+        <!-- Branded Items Section -->
+        <section id="branded-items" class="products-section">
+            <marquee behavior="scroll" direction="left" class="section-title">Branded Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="branded-products">
+                    <div class="product" onclick="showProductDetails('branded1')">
+                        <img src="https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/tile/geo/Apple-iPhone-16-lineup-geo-240909-lp.jpg.landing-big_2x.jpg" alt="Apple iPhone">
+                        <h3>Apple iPhone 16</h3>
+                        <p>Price: ₹1,20,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded2')">
+                        <img src="https://static.toiimg.com/thumb/resizemode-4,msid-72163026,imgsize-500,width-800/72163026.jpg" alt="Sony Bravia TV">
+                        <h3>Sony Bravia TV</h3>
+                        <p>Price: ₹95,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded3')">
+                        <img src="https://images-cdn.ubuy.co.in/633fd5cd47f20016771f3e10-samsung-galaxy-tab-a-sm-t580-10-1-inch.jpg" alt="Samsung Galaxy Tab">
+                        <h3>Samsung Galaxy Tab</h3>
+                        <p>Price: ₹45,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded4')">
+                        <img src="https://www.dell.com/wp-uploads/2024/01/XPS-9640-laptops-back-to-back-1280x800-1.jpg" alt="Dell XPS Laptop">
+                        <h3>Dell XPS Laptop</h3>
+                        <p>Price: ₹1,40,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded5')">
+                        <img src="https://m.media-amazon.com/images/I/61rgsnfRJlL.jpg" alt="Bose Headphones">
+                        <h3>Bose Headphones</h3>
+                        <p>Price: ₹28,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded6')">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034" alt="Apple MacBook Air">
+                        <h3>Apple MacBook Air</h3>
+                        <p>Price: ₹1,15,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded7')">
+                        <img src="https://www.sony.co.in/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony WH-1000XM4">
+                        <h3>Sony WH-1000XM4</h3>
+                        <p>Price: ₹30,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded8')">
+                        <img src="https://m.media-amazon.com/images/I/61Nhi7ovjkL.jpg" alt="Samsung Galaxy Watch">
+                        <h3>Samsung Galaxy Watch</h3>
+                        <p>Price: ₹22,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded9')">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FV1_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1725492498882" alt="Apple AirPods Pro">
+                        <h3>Apple AirPods Pro</h3>
+                        <p>Price: ₹25,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('branded10')">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-001-ROW:VP2-859x540" alt="Microsoft Surface Pro">
+                        <h3>Microsoft Surface Pro</h3>
+                        <p>Price: ₹1,25,000</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('branded-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('branded-products')">&gt;</button>
+            </div>
+        </section>
+
+        <!-- High Cost Items Section -->
+        <section id="high-cost-items" class="products-section">
+            <marquee behavior="scroll" direction="right" class="section-title">High Cost Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="high-cost-products">
+                    <div class="product" onclick="showProductDetails('highcost1')">
+                        <img src="https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_1100,f_auto,q_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/a898c7d2-8f27-11ea-a21e-c276f464bfe6.jpg" alt="Ultra HD TV">
+                        <h3>Ultra HD TV</h3>
+                        <p>Price: ₹1,00,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost2')">
+                        <img src="https://cdn.ndtv.com/tech/images/gadgets/gaming_laptops_not_worth_ndtv.jpg" alt="High-End Laptop">
+                        <h3>High-End Laptop</h3>
+                        <p>Price: ₹2,00,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost3')">
+                        <img src="https://m.media-amazon.com/images/I/91kTWpKNNLL._AC_UF1000,1000_QL80_.jpg" alt="Premium DSLR Camera">
+                        <h3>Premium DSLR Camera</h3>
+                        <p>Price: ₹1,50,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost4')">
+                        <img src="https://www.hindustantimes.com/ht-img/img/2023/12/20/550x309/71tTnJS25nL_SX679__cleanup_1703069824200_1703069824546.jpg" alt="Luxury Smartwatch">
+                        <h3>Luxury Smartwatch</h3>
+                        <p>Price: ₹75,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost5')">
+                        <img src="https://cdn.mos.cms.futurecdn.net/9qPwMYepYBRomZ3ifxjzCM-1200-80.png" alt="High-End Gaming Console">
+                        <h3>High-End Gaming <br> Console </h3>
+                        <p>Price: ₹65,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost6')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfs8e1jinBRED6itwJmo04ZCUGuARo4q1eQ&s" alt="Luxury Sound System">
+                        <h3>Luxury Sound System</h3>
+                        <p>Price: ₹85,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost7')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpsGA6KOtvozVNjZv9fmk-xHtM4eps9HLiA&s" alt="High-Performance Drone">
+                        <h3>High-Performance Drone</h3>
+                        <p>Price: ₹1,20,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost8')">
+                        <img src="https://d3t0tbmlie281e.cloudfront.net/igi/dozuki/EbpgOGvMChIwhUw1.medium" alt="Professional Camera Gear">
+                        <h3>Professional Camera Gear</h3>
+                        <p>Price: ₹1,80,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost9')">
+                        <img src="https://ansainteriors.com/wp-content/uploads/2020/03/home-theatre-design-scaled-1-1067x800.jpg" alt="Advanced Home Theater">
+                        <h3>Advanced Home Theater</h3>
+                        <p>Price: ₹1,40,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost10')">
+                        <img src="https://5.imimg.com/data5/BT/NS/MY-15680765/smart-home-automation-system-28ai-based-29.jpg" alt="Smart Home Automation System">
+                        <h3>Smart Home Automation <br> System</h3>
+                        <p>Price: ₹2,50,000</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('high-cost-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('high-cost-products')">&gt;</button>
+            </div>
+        </section>
+
+        <!-- Average Cost Items Section -->
+        <section id="average-cost-items" class="products-section">
+            <marquee behavior="scroll" direction="right" class="section-title">Average Cost Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="average-cost-products">
+                    <div class="product" onclick="showProductDetails('averagecost1')">
+                        <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2024/04/Best-mid-range-phone.jpg" alt="Mid-Range Smartphone">
+                        <h3>Mid-Range Smartphone</h3>
+                        <p>Price: ₹30,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost2')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzKRdJxw18XR1glqZAYfr_YsqgO8A-CspVw&s" alt="Smart Home Hub">
+                        <h3>Smart Home Hub</h3>
+                        <p>Price: ₹25,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost3')">
+                        <img src="https://img.freepik.com/free-photo/television-houseplants-room-scene-generative-ai_188544-12145.jpg" alt="Smart TV (HD)">
+                        <h3>Smart TV (HD)</h3>
+                        <p>Price: ₹35,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost4')">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/SZ/SL/EO/13290076/industrial-tablet-pc.jpg" alt="Tablet PC">
+                        <h3>Tablet PC</h3>
+                        <p>Price: ₹40,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost5')">
+                        <img src="https://cdn.vox-cdn.com/thumbor/fLLSMVSEkx4HA66l9WIFgwX41-I=/0x0:2040x1360/768x512/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24259072/226428_Garmin_Venu_Sq_2_AKrales_0152.jpg" alt="Fitness Tracker">
+                        <h3>Fitness Tracker</h3>
+                        <p>Price: ₹15,000</p>
+                    </div>
+                    <!-- 5 additional products -->
+                    <div class="product" onclick="showProductDetails('averagecost6')">
+                        <img src="https://m.media-amazon.com/images/I/61oXUJa8WML.jpg" alt="Wireless Printer">
+                        <h3>Wireless Printer</h3>
+                        <p>Price: ₹20,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost7')">
+                        <img src="https://img1.exportersindia.com/product_images/bc-small/2023/11/4491622/portable-air-conditioners-1684323017-6898645.jpg" alt="Portable Air Conditioner">
+                        <h3>Portable Air Conditioner</h3>
+                        <p>Price: ₹32,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost8')">
+                        <img src="https://images-cdn.ubuy.co.in/64d0f656164ac54032086fcd-prettycare-cordless-stick-vacuum-cleaner.jpg" alt="Cordless Vacuum Cleaner">
+                        <h3>Cordless Vacuum Cleaner</h3>
+                        <p>Price: ₹27,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost9')">
+                        <img src="https://m.media-amazon.com/images/I/717V4glGOsL._AC_UF894,1000_QL80_.jpg" alt="Electric Kettle">
+                        <h3>Electric Kettle</h3>
+                        <p>Price: ₹4,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost10')">
+                        <img src="https://4.imimg.com/data4/TH/KT/MY-11094670/electric-toaster.jpg" alt="Electric Toaster">
+                        <h3>Electric Toaster</h3>
+                        <p>Price: ₹2,500</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('average-cost-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('average-cost-products')">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <p>Price: ₹1,40,000</p>
+                    </div>
+                    
+        </section>
+
+        <!-- High Cost Items Section -->
+        <section id="high-cost-items" class="products-section">
+            <marquee behavior="scroll" direction="right" class="section-title">High Cost Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="high-cost-products">
+                    <div class="product" onclick="showProductDetails('highcost1')">
+                        <img src="https://res.cloudinary.com/sharp-consumer-eu/image/fetch/w_1100,f_auto,q_auto/https://s3.infra.brandquad.io/accounts-media/SHRP/DAM/origin/a898c7d2-8f27-11ea-a21e-c276f464bfe6.jpg" alt="Ultra HD TV">
+                        <h3>Ultra HD TV</h3>
+                        <p>Price: ₹1,00,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost2')">
+                        <img src="https://cdn.ndtv.com/tech/images/gadgets/gaming_laptops_not_worth_ndtv.jpg" alt="High-End Laptop">
+                        <h3>High-End Laptop</h3>
+                        <p>Price: ₹2,00,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost3')">
+                        <img src="https://m.media-amazon.com/images/I/91kTWpKNNLL._AC_UF1000,1000_QL80_.jpg" alt="Premium DSLR Camera">
+                        <h3>Premium DSLR Camera</h3>
+                        <p>Price: ₹1,50,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost4')">
+                        <img src="https://www.hindustantimes.com/ht-img/img/2023/12/20/550x309/71tTnJS25nL_SX679__cleanup_1703069824200_1703069824546.jpg" alt="Luxury Smartwatch">
+                        <h3>Luxury Smartwatch</h3>
+                        <p>Price: ₹75,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost5')">
+                        <img src="https://cdn.mos.cms.futurecdn.net/9qPwMYepYBRomZ3ifxjzCM-1200-80.png" alt="High-End Gaming Console">
+                        <h3>High-End Gaming <br> Console </h3>
+                        <p>Price: ₹65,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost6')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNfs8e1jinBRED6itwJmo04ZCUGuARo4q1eQ&s" alt="Luxury Sound System">
+                        <h3>Luxury Sound System</h3>
+                        <p>Price: ₹85,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost7')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpsGA6KOtvozVNjZv9fmk-xHtM4eps9HLiA&s" alt="High-Performance Drone">
+                        <h3>High-Performance Drone</h3>
+                        <p>Price: ₹1,20,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost8')">
+                        <img src="https://d3t0tbmlie281e.cloudfront.net/igi/dozuki/EbpgOGvMChIwhUw1.medium" alt="Professional Camera Gear">
+                        <h3>Professional Camera Gear</h3>
+                        <p>Price: ₹1,80,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost9')">
+                        <img src="https://ansainteriors.com/wp-content/uploads/2020/03/home-theatre-design-scaled-1-1067x800.jpg" alt="Advanced Home Theater">
+                        <h3>Advanced Home Theater</h3>
+                        <p>Price: ₹1,40,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('highcost10')">
+                        <img src="https://5.imimg.com/data5/BT/NS/MY-15680765/smart-home-automation-system-28ai-based-29.jpg" alt="Smart Home Automation System">
+                        <h3>Smart Home Automation <br> System</h3>
+                        <p>Price: ₹2,50,000</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('high-cost-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('high-cost-products')">&gt;</button>
+            </div>
+        </section>
+
+        <!-- Average Cost Items Section -->
+        <section id="average-cost-items" class="products-section">
+            <marquee behavior="scroll" direction="right" class="section-title">Average Cost Items</marquee>
+            <div class="product-slider">
+                <div class="product-list" id="average-cost-products">
+                    <div class="product" onclick="showProductDetails('averagecost1')">
+                        <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2024/04/Best-mid-range-phone.jpg" alt="Mid-Range Smartphone">
+                        <h3>Mid-Range Smartphone</h3>
+                        <p>Price: ₹30,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost2')">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzKRdJxw18XR1glqZAYfr_YsqgO8A-CspVw&s" alt="Smart Home Hub">
+                        <h3>Smart Home Hub</h3>
+                        <p>Price: ₹25,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost3')">
+                        <img src="https://img.freepik.com/free-photo/television-houseplants-room-scene-generative-ai_188544-12145.jpg" alt="Smart TV (HD)">
+                        <h3>Smart TV (HD)</h3>
+                        <p>Price: ₹35,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost4')">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/SZ/SL/EO/13290076/industrial-tablet-pc.jpg" alt="Tablet PC">
+                        <h3>Tablet PC</h3>
+                        <p>Price: ₹40,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost5')">
+                        <img src="https://cdn.vox-cdn.com/thumbor/fLLSMVSEkx4HA66l9WIFgwX41-I=/0x0:2040x1360/768x512/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24259072/226428_Garmin_Venu_Sq_2_AKrales_0152.jpg" alt="Fitness Tracker">
+                        <h3>Fitness Tracker</h3>
+                        <p>Price: ₹15,000</p>
+                    </div>
+                    <!-- 5 additional products -->
+                    <div class="product" onclick="showProductDetails('averagecost6')">
+                        <img src="https://m.media-amazon.com/images/I/61oXUJa8WML.jpg" alt="Wireless Printer">
+                        <h3>Wireless Printer</h3>
+                        <p>Price: ₹20,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost7')">
+                        <img src="https://img1.exportersindia.com/product_images/bc-small/2023/11/4491622/portable-air-conditioners-1684323017-6898645.jpg" alt="Portable Air Conditioner">
+                        <h3>Portable Air Conditioner</h3>
+                        <p>Price: ₹32,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost8')">
+                        <img src="https://images-cdn.ubuy.co.in/64d0f656164ac54032086fcd-prettycare-cordless-stick-vacuum-cleaner.jpg" alt="Cordless Vacuum Cleaner">
+                        <h3>Cordless Vacuum Cleaner</h3>
+                        <p>Price: ₹27,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost9')">
+                        <img src="https://m.media-amazon.com/images/I/717V4glGOsL._AC_UF894,1000_QL80_.jpg" alt="Electric Kettle">
+                        <h3>Electric Kettle</h3>
+                        <p>Price: ₹4,000</p>
+                    </div>
+                    <div class="product" onclick="showProductDetails('averagecost10')">
+                        <img src="https://4.imimg.com/data4/TH/KT/MY-11094670/electric-toaster.jpg" alt="Electric Toaster">
+                        <h3>Electric Toaster</h3>
+                        <p>Price: ₹2,500</p>
+                    </div>
+                </div>
+                <button class="prev-btn" onclick="scrollLeft('average-cost-products')">&lt;</button>
+                <button class="next-btn" onclick="scrollRight('average-cost-products')">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@electronichub.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
